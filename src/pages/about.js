@@ -7,6 +7,8 @@ import Image from 'next/image'
 import { motionValue, useInView, useMotionValue, useSpring } from 'framer-motion'
 import { useRef } from 'react'
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
+import Education from '@/components/Education'
 
 const AnimatedNumbers = ({value}) => {
 const ref = useRef(null);
@@ -86,6 +88,8 @@ every project I work on. I look forward to the opportunity to bring my skills an
                 </div>
                </div>
                <Skills />
+               <Experience />
+               <Education />
                 </Layout> 
             </main>
         </>
