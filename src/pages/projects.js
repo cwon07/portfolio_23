@@ -12,6 +12,7 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
     return(
       <article className='w-full flex items-center justify-between relative rounded-br-2xl
       rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light dark:text-light
+      lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
       '>
       <div className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
       rounded-br-3xl
@@ -19,7 +20,12 @@ const FeaturedProject = ({type, title, summary, img, link, github}) => {
         <Link href={link} target="_blank"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
         >
-            <Image src={img} alt={title} className='w-full h-auto' />
+            <Image src={img} alt={title} className='w-full h-auto'
+            whileHover={{scale:1.05}}
+            transition={{duration:0.2}}
+            priority
+            sizes="(max-width: 768px) 100vw,
+            (max-width:1200px) 50vw, 50vw" />
         </Link> 
 
         <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -56,7 +62,7 @@ const Project = ({title, type, img, link, github}) => {
         </Link>
 
         <div className='w-full flex flex-col items-start justify-between mt-4'>
-            <span className='text-primary font-medium text-xl'>{type}</span>
+            <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
             <Link 
                 href={link} 
                 target="_blank" 
@@ -91,9 +97,9 @@ const projects = () => {
         <main className='w-full mb-16 flex flex-col items-center justify-center'>
             <Layout className='pt-16 '>
                 <AnimatedText text="Imagination Trumps Knowledge" 
-                className='mb-16'/>
+                className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
 
-                <div className='grid grid-cols-12 gap-24 gap-y-32'>
+                <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject                       
                         title="Craft: The Local Brewery Finder"
