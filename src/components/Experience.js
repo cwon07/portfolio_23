@@ -51,28 +51,17 @@ const Experience = () => {
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details 
-                    position="Software Engineer" company="Google"
-                    companyLink="www.google.com"
-                    time="2022-present" address="Mountain View, CA"
-                    work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."/>
+                    position="International Student Specialist" company="British Columbia Institute of Technology"
+                    companyLink="www.bcit.ca"
+                    time="2016-present" address="Vancouver, Canada"
+                    work="Provided culturally sensitive academic advising to a caseload of 150 students per term, emphasizing diversity and inclusivity, and achieving a notable 90% retention rate for at-risk students through timely interventions."/>
 
                     <Details 
-                    position="Software Engineer" company="Google"
-                    companyLink="www.google.com"
-                    time="2022-present" address="Mountain View, CA"
-                    work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."/>
+                    position="Customer Service Representative" company="TD Canada Trust"
+                    companyLink="www.td.ca"
+                    time="2013-2015" address="Vancouver, Canada"
+                    work="Received eight consecutive awards for consistently exceeding performance goals, providing excellent customer service, and maintaining a customer satisfaction rate of 98%, earning a spot in the top fifty customer service representatives in sales volume in the Greater Vancouver region."/>
 
-                    <Details 
-                    position="Software Engineer" company="Google"
-                    companyLink="www.google.com"
-                    time="2022-present" address="Mountain View, CA"
-                    work="Worked on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."/>
                 </ul>
             </div>
         </div>

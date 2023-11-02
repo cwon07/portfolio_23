@@ -49,18 +49,14 @@ const Education = () => {
 
                 <ul className='w-full flex flex-col items-start justify-between ml-4 xs:ml-2'>
                     <Details 
-                    certification="Software Engineer" school="General Assembly"
-                    time="2022-present" address="Mountain View, CA"
-                    desc="desced on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."/>
+                    certification="Software Engineering Immersive Certificate" school="General Assembly"
+                    time="October 2023" address="Online"
+                    desc="Completed 420 hours of intensive, expert-led education and training that focuses on establishing development fundamentals, frameworks, data modeling, and object-oriented programming, which helped gain hands-on experience in full-stack software development, honing my skills and knowledge to meet the industry's highest standards."/>
 
                     <Details 
-                    certification="Software Engineer" school="Google" 
-                    time="2022-present" address="Mountain View, CA"
-                    desc="desced on a team responsible for developing new features for Google's 
-                    search engine, including improving the accuracy and relevance of search results and 
-                    developing new tools for data analysis and visualization."/>
+                    certification="BA English Literature" school="University of British Columbia" 
+                    time="2011" address="Vancouver, Canada"
+                    desc="Graduated with a deep understanding of literary analysis, critical thinking, and effective communication through the study of diverse literary works. Gained strong analytical and writing skills, making them adept at interpreting and communicating complex ideas in various professional contexts."/>
                 </ul>
             </div>
         </div>

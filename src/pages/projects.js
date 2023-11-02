@@ -92,34 +92,34 @@ const projects = () => {
         <>
         <Head>
             <title>Christine Wong | Projects</title>
-            <meta name="description" content='any description' />
+            <meta name="description" content='Projects of Christine Wong' />
         </Head>
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center'>
             <Layout className='pt-16 '>
                 <AnimatedText text="Imagination Trumps Knowledge" 
-                className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl'/>
+                className='mb-16 lg:!text-6xl sm:mb-8 sm:!text-5xl xs:!text-4xl'/>
 
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject                       
                         title="Craft: The Local Brewery Finder"
                         img={projectImage}
-                        summary="loren ipsum blah blah blah"
-                        link="/"
-                        github="/"
+                        summary="Craft features a search function that returns local breweries in your area. You can locate them easily on the provided Google Map, click on the brewery website to get more information."
+                        link="https://ga-project-1.onrender.com/"
+                        github="https://github.com/cwon07/project1"
                         type="Featured Project"
                         />
                     </div>
 
                     <div className='col-span-6 sm:col-span-12'>
                        <Project 
-                       title="Interview Tracker"
+                       title="Creme de la Creme - a digital recipe box"
                        img={projectImage}
                        type="Featured Project"
-                       link="/"
-                       github="/"
-                       summary=""/>
+                       link="https://ga-project-2.onrender.com/"
+                       github="https://github.com/cwon07/project2"
+                       summary="Creme de la Creme makes it easy for users to save their favorite recipes in one esthetically-pleasing digital recipe box. Built as a full CRUD website with MongoDB database, using Vanilla JS, Node, Express, RESTful API."/>
                     </div>
 
                     <div className='col-span-6 sm:col-span-12'>
@@ -127,9 +127,9 @@ const projects = () => {
                        title="Interview Tracker"
                        img={projectImage}
                        type="Featured Project"
-                       link="/"
-                       github="/"
-                       summary=""/>
+                       link="https://interview-tracker-project-4.onrender.com/"
+                       github="https://github.com/cwon07/project4_backend"
+                       summary="Interview Tracker is an interactive app that allows users to save all the details of their interview preparations in one place. Created using the MERN stack. Save all the important details in one place so you’re good to go!"/>
                     </div>
 
                     <div className='col-span-12'>
