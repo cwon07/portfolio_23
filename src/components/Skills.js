@@ -21,7 +21,7 @@ const Skill = ({name, x, y}) => {
 const Skills = () => {
     return(
         <>
-            <h2 className='font-bold text-8xl mt-64 w-full text-center md:text-6xl md:mt-32'>Skills</h2>
+            <h2 className='font-bold text-8xl mt-64 mb-55 w-full text-center md:text-6xl md:mt-32 md:mb-30'>Skills</h2>
             <div className='w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark
             lg:h-[80vh] sm:h-[60vh] xs:h-[50vh]
             lg:bg-circularLightLg lg:dark:bg-circularDarkLg md:bg-circularLightMd md:dark:bg-circularDarkMd sm:bg-circularLightSm sm:dark:bg-circularDarkSm'>
@@ -42,7 +42,7 @@ const Skills = () => {
                 <Skill name="Next.js" x="3vw" y="26vw" />
                 <Skill name="Restful API" x="-25vw" y="18vw" />
                 <Skill name="Firebase" x="25vw" y="18vw" />
-                <Skill name="Tailwind CSS" x="18vw" y="-25vw" />
+                <Skill name="Tailwind CSS" x="20vw" y="-20vw" />
             </div>
         </>
     )

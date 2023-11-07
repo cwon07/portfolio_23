@@ -1,8 +1,8 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Image from 'next/image'
-import MainImage from '@/components/MainImage'
+import ProfilePic from '../../public/images/profile/ProfilePic.png'
 import AnimatedText from '@/components/AnimatedText'
+import Image from 'next/image'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import TransitionEffect from '@/components/TransitionEffect'
@@ -19,11 +19,11 @@ export default function Home() {
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className='w-full md:w-full'>
-              <MainImage alt='undraw - innovative' className='w-full h-auto lg:hidden md:inline-block md:w-full' 
+              <Image src={ProfilePic} alt='Christine Wong profile photo' className='w-3/4 h-max rounded-3xl lg:hidden md:inline-block md:w-full' 
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
+            <div className='w-3/4 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text="Turning Vision Into Reality With Code And Design" className='!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl'/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
