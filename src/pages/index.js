@@ -1,11 +1,12 @@
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import ProfilePic from '../../public/images/profile/ProfilePic.png'
+import IndexImage from '../../public/images/profile/animation.gif'
 import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
 import TransitionEffect from '@/components/TransitionEffect'
+import about from './about'
 
 export default function Home() {
   return (
@@ -15,18 +16,19 @@ export default function Home() {
         <meta name="description" content="Christine Wong - Full Stack Developer - Portfolio" />
       </Head>
       <TransitionEffect />
-      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
+      <AnimatedText text="Hello! I'm Christine." className='!text-5xl !text-center pt-30 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl'/>
+      <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>        
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className='w-full md:w-full'>
-              <Image src={ProfilePic} alt='Christine Wong profile photo' className='w-3/4 h-max rounded-3xl lg:hidden md:inline-block md:w-full' 
+              <Image src={IndexImage} alt='woman sitting at a desk coding' className='w-3/4 h-max rounded-3xl lg:hidden md:inline-block md:w-full' 
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
             </div>
             <div className='w-3/4 flex flex-col items-center self-center lg:w-full lg:text-center'>
               <AnimatedText text="Turning Vision Into Reality With Code And Design" className='!text-5xl !text-left xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl'/>
               <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
+              I am dedicated to turning ideas into innovative web applications. 
 Explore my latest projects and articles, showcasing my expertise in React.js and web development.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
